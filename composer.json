@@ -1,0 +1,29 @@
+{
+    "name": "sudo/slack",
+    "description": "Slack Sudo package",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Nguyen Viet Hieu",
+            "email": "hieunvph04479@gmail.com"
+        }
+    ],
+    "require": {
+        "laravel/slack-notification-channel": "^2.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sudo\\Slack\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sudo\\Slack\\Providers\\SlackServiceProvider"
+            ],
+            "aliases": {}
+        }
+    }
+}
